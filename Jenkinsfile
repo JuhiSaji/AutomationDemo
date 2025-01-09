@@ -21,15 +21,7 @@ pipeline {
             }
         }
 
-        stage('Publish Reports') {
-            steps {
-                publishHTML(target: [
-                    reportDir: 'target/html-report',
-                    reportFiles: 'index.html',
-                    reportName: 'Test Automation Report'
-                ])
-            }
-        }
+        
     }
 
     post {
