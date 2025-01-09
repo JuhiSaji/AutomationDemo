@@ -14,14 +14,7 @@ pipeline {
             }
         }
 
-        stage('Publish Test Results') {
-            steps {
-               publishTestNGResults testResults: '**/test-output/testng-results.xml'   // For TestNG test reports
-
-            }
-        }
-
-        
+              
     }
 
     post {
