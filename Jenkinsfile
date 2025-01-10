@@ -22,14 +22,16 @@ pipeline {
             emailext(
     subject: "Build Successful: ${BUILD_NUMBER}",
     body: "The build ${BUILD_NUMBER} was successful.\n\nSee details at: ${BUILD_URL}",
-    to: 'maryjuhi0215@gmail.com'
+    to: 'maryjuhi0215@gmail.com',
+    from: 'jenkins@example.com'
 )
         }
         failure {
            emailext(
     subject: "Build Failed: ${BUILD_NUMBER}",
     body: "The build ${BUILD_NUMBER} failed.\n\nSee details at: ${BUILD_URL}",
-    to: 'maryjuhi0215@gmail.com'
+    to: 'maryjuhi0215@gmail.com',
+    from: 'jenkins@example.com'
 )
         }
     }
