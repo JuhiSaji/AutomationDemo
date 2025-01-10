@@ -20,17 +20,19 @@ pipeline {
     post {
         success {
             emailext(
-                subject: "Build Successful:  ${BUILD_NUMBER}",
-                body: "The build ${BUILD_NUMBER} was successful.\n\nSee details at: ${BUILD_URL}",
-                to: 'maryjuhi0215@gmail.com'
-            )
+    subject: "Build Successful: ${BUILD_NUMBER}",
+    body: "The build ${BUILD_NUMBER} was successful.\n\nSee details at: ${BUILD_URL}",
+    to: 'maryjuhi0215@gmail.com',
+    debug: true
+)
         }
         failure {
-            emailext(
-                subject: "Build Failed: ${BUILD_NUMBER}",
-                body: "The build ${BUILD_NUMBER} failed.\n\nSee details at: ${BUILD_URL}",
-                to: 'maryjuhi0215@gmail.com'
-            )
+           emailext(
+    subject: "Build Failed: ${BUILD_NUMBER}",
+    body: "The build ${BUILD_NUMBER} failed.\n\nSee details at: ${BUILD_URL}",
+    to: 'maryjuhi0215@gmail.com',
+    debug: true
+)
         }
     }
 }
