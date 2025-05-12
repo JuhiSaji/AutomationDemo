@@ -1,9 +1,9 @@
 name: Automation Assessment
 
 on:
-  workflow_dispatch:        
+  workflow_dispatch:        # Allows manual trigger
   schedule:
-    - cron: '0 0 * * *'      
+    - cron: '0 0 * * *'     # Runs daily at midnight (UTC)
 
 jobs:
   run-tests:
@@ -32,12 +32,11 @@ jobs:
         with:
           name: Test-Report
           path: target/cucumber-reports/
-		  
-		- name: Send notification on success
-		         if: success()
-		         run: echo "Tests passed successfully!"
 
-		- name: Send notification on failure
-		         if: failure()
-		         run: echo "Tests failed!"
+      - name: Send notification on success
+        if: success()
+        run: echo "Tests passed successfully!"
 
+      - name: Send notification on failure
+        if: failure()
+        run: echo "Tests failed!"
