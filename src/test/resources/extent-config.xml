@@ -2,7 +2,7 @@
     <!-- Configuration for Spark Reporter -->
     <configuration>
         <!-- Title for the report -->
-        <reportName>My Automation Test Report</reportName>
+        <reportName>Automation Test Report</reportName>
         
         <!-- Title for the document -->
         <documentTitle>Automation Execution Results</documentTitle>
