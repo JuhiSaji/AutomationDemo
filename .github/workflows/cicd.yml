@@ -33,10 +33,11 @@ jobs:
           name: Test-Report
           path: target/cucumber-reports/
 		  
-	  -	name: Send notification on success
-		          if: success()
-		          run: echo "Tests passed successfully!"
-	  - name: Send notification on failure
-		          if: failure()
-		          run: echo "Tests failed!"
+		- name: Send notification on success
+		         if: success()
+		         run: echo "Tests passed successfully!"
+
+		- name: Send notification on failure
+		         if: failure()
+		         run: echo "Tests failed!"
 
