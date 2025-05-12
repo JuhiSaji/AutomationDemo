@@ -24,10 +24,10 @@ jobs:
         with:
           maven-version: '3.9.3'
 
-      - name: 🧪 Run Tests
+      - name: Run Tests
         run: mvn clean test
 
-      - name: 📊 Upload HTML Report
+      - name: Upload HTML Report
         uses: actions/upload-artifact@v4
         with:
           name: Test-Report

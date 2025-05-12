@@ -13,7 +13,6 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 		glue = "StepDefinition", // Path to your step definition package
 		plugin = { "pretty", // Prints the Gherkin steps in the console
 				"html:target/cucumber-reports/cucumber.html", // Generates an HTML report
-				"json:target/cucumber-reports/cucumber.json", // Generates a JSON report
 				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:", // ExtentReports
 		}, monochrome = true, // Makes the console output more readable
 		dryRun = false, tags = "@smoke" // Tags to run specific scenarios (optional)
