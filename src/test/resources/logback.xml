@@ -1,0 +1,11 @@
+<configuration>
+    <logger name="org.apache.hc.client5.http.wire" level="OFF"/>
+    <root level="WARN">
+        <appender-ref ref="CONSOLE"/>
+    </root>
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%msg%n</pattern>
+        </encoder>
+    </appender>
+</configuration>
