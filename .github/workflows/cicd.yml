@@ -3,7 +3,7 @@ name: Automation Assessment
 on:
   workflow_dispatch:        
   schedule:
-    - cron: '0 10 * * *'     
+    - cron: '15 6 * * *'     
 
 jobs:
   run-tests:
