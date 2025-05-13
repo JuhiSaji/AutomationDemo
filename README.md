@@ -29,8 +29,8 @@ Test data is managed using a combination of:
   - Dynamic data generation: For generating unique user data (e.g., user ID, password) during runtime.
 
 ## Browser Configuration
-To run tests on a different browser, pass parameter through config.properties file or mvn cmd prompt
-- For Chrome: mvn test -Dbrowser=chrome
+To run tests on a different browser (default as chrome), pass parameter through config.properties file or mvn cmd prompt
+- For Chrome: mvn test -Dbrowser=chrome 
 - For Edge: mvn test -Dbrowser=edge
 
 ## Run Tests
@@ -38,7 +38,7 @@ Local Run:
 1. Open command prompt and take a clone of the code from git remote repository using below command:
 	 git clone https://github.com/JuhiSaji/AutomationDemo.git
 2. Navigate to local repository using command:
-	 cd local-project-directory-path
+	 cd AutomationDemo
 3. Execute command 'mvn clean test' to run the tests 
 
 CI/CD Pipeline with GitHub Actions: 
