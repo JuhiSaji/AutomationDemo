@@ -44,7 +44,7 @@ Local Run:
 CI/CD Pipeline with GitHub Actions: 
 CI/CD is configured in .github/workflows/cicd.yml.
 Tests can be triggered:
- - Manually: Go to GitHubRepo → Actions → Select "Run Workflow"
+ - Manually: Go to GitHubRepo -> Actions -> Project(Automation Assessment) -> Select "Run Workflow"
  - Automatically: Scheduled daily run at 2:00 PM UTC
  
 ## HTML Report
