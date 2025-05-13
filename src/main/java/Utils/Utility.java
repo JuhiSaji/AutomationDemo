@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class Utility {
 
 	public static void getUniqueUserId() {
-		String userId = "M_" + UUID.randomUUID().toString().substring(0, 6);
+		String userId = "MTUser_" + UUID.randomUUID().toString().substring(0, 6);
 		testUserData.set("userId", userId);
 		String pwd = "Pwd@" + UUID.randomUUID().toString().substring(0, 4);
 		testUserData.set("password", pwd);

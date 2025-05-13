@@ -36,7 +36,7 @@ To run tests on a different browser, pass parameter through config.properties fi
 ## Run Tests
 Local Run:
 1. Open command prompt and take a clone of the code from git remote repository using below command:
-	 git clone https://github.com/JuhiSaji/AutomationPOC.git
+	 git clone https://github.com/JuhiSaji/AutomationDemo.git
 2. Navigate to local repository using command:
 	 cd local-project-directory-path
 3. Execute command 'mvn clean test' to run the tests 
