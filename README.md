@@ -51,3 +51,4 @@ Tests can be triggered:
 Find reports post execution at:
  - cucumber html reports : target/cucumber-reports/cucumber.html
  - extent reports : target/Extent-reports/ExtentReport.html
+ - also download available from the Actions > Artifacts section in GitHub
