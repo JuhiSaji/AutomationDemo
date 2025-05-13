@@ -1,7 +1,6 @@
 name: Automation Assessment
 
 on:
-  workflow_dispatch:        
   schedule:
     - cron: '*/5 * * * *'
 
