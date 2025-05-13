@@ -3,6 +3,7 @@
  *
  */
 package CucumberExecutor;
+
 import io.cucumber.testng.CucumberOptions;
 import org.testng.annotations.AfterSuite;
 import Base.DriverManager;
@@ -17,6 +18,7 @@ public class TestRunner extends AbstractTestNGCucumberTests {
 	@AfterSuite
 	public void closeBrowser() {
 		DriverManager.quitDriver();
+
 	}
 
 }

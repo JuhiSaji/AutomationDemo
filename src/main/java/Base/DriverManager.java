@@ -36,6 +36,14 @@ public class DriverManager {
 	}
 
 	public static void quitDriver() {
-		driver.quit();
+		if (driver != null) {
+			try {
+				driver.quit();
+			} catch (Exception e) {
+				System.out.println("Driver already closed or could not quit: " + e.getMessage());
+			} finally {
+				driver = null;
+			}
+		}
 	}
 }
