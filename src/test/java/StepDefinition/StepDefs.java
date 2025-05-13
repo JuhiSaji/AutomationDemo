@@ -46,7 +46,6 @@ public class StepDefs {
 				scenario.getName());
 		if (testUserData.get("userId") == null) // Dynamic user credentials generation
 			Utility.getUniqueUserId();
-
 		reg = new UserRegister(driver, sTestData);
 		lp = new UserLogin(driver, sTestData);
 		addItem = new AddItem(driver, sTestData);
@@ -74,7 +73,7 @@ public class StepDefs {
 		reg.launchRegistration();
 	}
 
-	@When("enters registration data")
+	@When("enters registration data and submit")
 	public void enters_registration_data() {
 		reg.setRegisterData();
 	}
@@ -120,7 +119,7 @@ public class StepDefs {
 	@Then("user should be signed in")
 	public void user_should_be_signed_in() {
 		lp.verifySignIn();
-		scenario.log("Successfull SignIn");
+		scenario.log("Successful SignIn");
 	}
 
 	@Given("user is signed in")

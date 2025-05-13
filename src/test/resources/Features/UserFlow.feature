@@ -4,7 +4,7 @@ Feature: User Registration, Sign In and Add to Cart
   	Scenario: Register a new user successfully
     Given user navigate to url 
     When user opens the registration page
-    And enters registration data
+    And enters registration data and submit
     Then user account should be created
     
     @smoke
@@ -25,7 +25,7 @@ Feature: User Registration, Sign In and Add to Cart
     When user enters valid credentials
     Then user should be signed in
   
-  	 @smoke 																										
+  	@smoke 																										
     Scenario Outline: Add item to cart
   	Given user is signed in
   	When user choose "<category>" category
