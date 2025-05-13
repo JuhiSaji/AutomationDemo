@@ -4,7 +4,6 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.util.LinkedHashMap;
 import java.util.Map;
-
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
@@ -43,7 +42,8 @@ public class DBManager {
 						String value = dataCell != null ? dataCell.toString() : "";
 						testData.put(key, value);
 
-					}break;
+					}
+					break;
 
 				}
 			}

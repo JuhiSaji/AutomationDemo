@@ -32,29 +32,23 @@ public class AddItem {
 
 	public void selectCategory(String name) {
 		category = category.replace("dynamicText", name);
-		System.out.println(category);
 		driver.findElement(By.xpath(category)).click();
 	}
 
 	public void selectItem(String name) {
 		item = item.replace("dynamicText", name);
-		System.out.println(item);
 		driver.findElement(By.xpath(item)).click();
 	}
 
 	public void selectBreed(String name) {
 		breed = breed.replace("dynamicText", name);
 		breedItem = name;
-		System.out.println(breed);
 		driver.findElement(By.xpath(breed)).click();
 	}
 
 	public String cartCheck() {
 
 		cartItem = cartItem.replace("dynamicText", breedItem);
-		System.out.println(cartItem);
-		System.out.println("BreedItem:" + breedItem);
-
 		Assert.assertTrue(driver.findElement(By.xpath(cartItem)).isDisplayed());
 		return breedItem;
 	}
@@ -67,7 +61,6 @@ public class AddItem {
 	public void cartClear() {
 
 		while (true) {
-
 			List<WebElement> list = driver.findElements(By.xpath(removeItem));
 			if (list.isEmpty())
 				break;
