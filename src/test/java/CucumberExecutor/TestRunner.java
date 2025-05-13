@@ -10,7 +10,7 @@ import Base.DriverManager;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 
 @CucumberOptions(features = "src/test/resources/Features/UserFlow.feature", glue = "StepDefinition", plugin = {
-		"pretty", "html:target/cucumber-reports/cucumber.html",
+		"pretty", "html:target/cucumber-reports/CucumberReport.html",
 		"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:", }, monochrome = true, dryRun = false, tags = "@smoke")
 
 public class TestRunner extends AbstractTestNGCucumberTests {
