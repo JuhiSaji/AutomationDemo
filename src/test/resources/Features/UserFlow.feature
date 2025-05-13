@@ -20,7 +20,7 @@ Feature: User Registration, Sign In and Add to Cart
     Then user should see an invalid signin error message
     
    	@smoke 
-    Scenario: Sign in with valid user
+    Scenario: Sign in with registered user
     Given user opens the login page
     When user enters valid credentials
     Then user should be signed in
